@@ -11,19 +11,19 @@ const RootLayout = () => {
       <Stack.Screen 
         name="login" 
         options={{ 
-          headerShown: true, 
+          headerShown: false, 
           title: 'Login', 
           headerBackTitle: 'Back',
-          headerBackTitleVisible: true
+          headerBackTitleVisible: false
         }} 
       />
       <Stack.Screen 
         name="register" 
         options={{ 
-          headerShown: true, 
+          headerShown: false, 
           title: 'Register', 
           headerBackTitle: 'Back',
-          headerBackTitleVisible: true
+          headerBackTitleVisible: false
         }} 
       />
       <Stack.Screen 
