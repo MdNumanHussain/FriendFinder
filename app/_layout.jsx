@@ -11,35 +11,80 @@ const RootLayout = () => {
       <Stack.Screen 
         name="login" 
         options={{ 
-          headerShown: false, 
-          title: 'Login', 
-          headerBackTitle: 'Back',
-          headerBackTitleVisible: false
-        }} 
-      />
-      <Stack.Screen 
-        name="register" 
-        options={{ 
-          headerShown: false, 
-          title: 'Register', 
-          headerBackTitle: 'Back',
-          headerBackTitleVisible: false
-        }} 
-      />
-      <Stack.Screen 
-        name="reset" 
-        options={{ 
           headerShown: true, 
-          title: 'Reset Password', 
+          headerTransparent: true, 
+          headerTitle: '', 
           headerBackTitle: 'Back',
           headerBackTitleVisible: true
         }} 
       />
       <Stack.Screen 
+        name="register" 
+        options={{ 
+          headerShown: true, 
+          headerTransparent: true, 
+          headerTitle: '', 
+          headerBackTitle: 'Back',
+          headerBackTitleVisible: true
+        }} 
+      />
+      <Stack.Screen 
+  name="reset" 
+  options={{ 
+    headerShown: true, 
+    headerTransparent: true, 
+    headerTitle: '', 
+    headerBackTitle: 'Back',
+    headerBackTitleVisible: true
+  }} 
+/>
+
+      <Stack.Screen 
         name="home" 
         options={{ 
           headerShown: true, 
           title: 'Home', 
+          headerBackTitle: 'Back',
+          headerBackTitleVisible: true
+        }} 
+      />
+      <Stack.Screen 
+        name="name" 
+        options={{ 
+          headerShown: true, 
+          headerTransparent: true, 
+          headerTitle: '', 
+          headerBackTitle: 'Back',
+          headerBackTitleVisible: true
+        }} 
+      />
+      <Stack.Screen 
+        name="PhoneNumberScreen" 
+        
+        options={{ 
+          headerShown: true, 
+          headerTransparent: true, 
+          headerTitle: '', 
+          headerBackTitle: 'Back',
+          headerBackTitleVisible: true
+        }} 
+      />
+      <Stack.Screen 
+        name="VerifyScreen" 
+        options={{ 
+          headerShown: true, 
+          headerTransparent: true, 
+          headerTitle: '', 
+          headerBackTitle: 'Back',
+          headerBackTitleVisible: true
+        }} 
+      />
+      <Stack.Screen 
+        name="GenderScreen" 
+        options={{ 
+          headerShown: true, 
+          headerTransparent: true, 
+          headerTitle: '', 
           headerBackTitle: 'Back',
           headerBackTitleVisible: true
         }} 

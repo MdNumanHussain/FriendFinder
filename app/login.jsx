@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Dimensions, Image, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native'; 
 import { AntDesign } from '@expo/vector-icons'; 
-import { FontAwesome } from '@expo/vector-icons'; 
 import { Ionicons } from '@expo/vector-icons'; 
 import { auth } from './firebaseConfig'; // Ensure correct import path
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -19,6 +18,8 @@ export default function LoginScreen() {
       .then((userCredential) => {
         console.log('User signed in:', userCredential.user);
         setErrorMessage('Sign in successful!');
+        // Navigate to Additional Info screen
+        navigation.navigate('name');
       })
       .catch((error) => {
         console.error('Login error:', error);
@@ -80,9 +81,6 @@ export default function LoginScreen() {
         <View style={styles.socialButtons}>
           <TouchableOpacity style={styles.socialButton}>
             <AntDesign name="google" size={50} color="green" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.socialButton}>
-            <FontAwesome name="facebook" size={50} color="blue" />
           </TouchableOpacity>
           <TouchableOpacity style={styles.socialButton}>
             <Ionicons name="logo-apple" size={50} color="grey" />
