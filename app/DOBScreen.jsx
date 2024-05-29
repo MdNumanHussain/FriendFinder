@@ -20,6 +20,8 @@ export default function DOBScreen() {
 
   const handleContinue = () => {
     console.log('Selected Date:', date);
+    navigation.navigate('home');
+
     // Navigate to the next screen or process the data
     // navigation.navigate('NextScreen'); // Replace 'NextScreen' with your next screen name
   };
@@ -28,9 +30,6 @@ export default function DOBScreen() {
     <ImageBackground source={require('../assets/additionalinfo.png')} style={styles.imageBackground}>
       <View style={styles.container}>
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => navigation.goBack()}>
-            <Text style={styles.backButton}>Back</Text>
-          </TouchableOpacity>
         </View>
         <Text style={styles.title}>My birthday is</Text>
         <TouchableOpacity onPress={showDatepicker} style={styles.datePickerButton}>
@@ -47,9 +46,6 @@ export default function DOBScreen() {
         )}
         <TouchableOpacity style={styles.continueButton} onPress={handleContinue}>
           <Text style={styles.continueButtonText}>Continue</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('login')}>
-          <Text style={styles.loginLink}>Already have an account?</Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>

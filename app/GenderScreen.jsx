@@ -17,6 +17,7 @@ export default function GenderScreen() {
 
   const handleNext = () => {
     console.log('Selected Gender:', selectedGender);
+    navigation.navigate('DOBScreen');
     // Handle storing the gender and navigating to the next screen
     // navigation.navigate('NextScreen'); // Replace 'NextScreen' with your next screen name
   };

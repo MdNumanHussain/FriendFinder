@@ -42,7 +42,7 @@ const RootLayout = () => {
       <Stack.Screen 
         name="home" 
         options={{ 
-          headerShown: true, 
+          headerShown: false, 
           title: 'Home', 
           headerBackTitle: 'Back',
           headerBackTitleVisible: true
@@ -81,6 +81,16 @@ const RootLayout = () => {
       />
       <Stack.Screen 
         name="GenderScreen" 
+        options={{ 
+          headerShown: true, 
+          headerTransparent: true, 
+          headerTitle: '', 
+          headerBackTitle: 'Back',
+          headerBackTitleVisible: true
+        }} 
+      />
+      <Stack.Screen 
+        name="DOBScreen" 
         options={{ 
           headerShown: true, 
           headerTransparent: true, 
